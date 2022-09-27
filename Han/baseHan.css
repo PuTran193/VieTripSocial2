@@ -1,0 +1,72 @@
+:root{
+    --primary-color: rgb(50,129,107)
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    --header-height: 120px;
+    --navbar-height: 36px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height));
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 16px;
+    /* 1rem= 10px  */
+    font-family: 'Roboto', sans-serif;
+    /* sans-serif tổng hợp font k chân */
+    box-sizing: border-box;
+}
+
+/* Responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px ;
+    margin-right: -12px;
+}
+
+.grid_column-sidebar{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+
+}
+
+.grid_column-location{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+
+}
+
+
+
+.grid_column-2-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+
+
+.grid_column-content{ /*  100/12 x 8 */
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.66667%;
+}
