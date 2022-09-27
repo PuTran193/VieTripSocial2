@@ -10,11 +10,16 @@
 }
 
 *{
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
-    
+    min-height: 100vh;
     margin: 0;
 }
 html{
