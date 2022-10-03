@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleHan.css">
+    <link rel="stylesheet" href="./baseHan.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="VieTripSocial">
+
+        <!--===================== Header =====================-->
+        <header class="header row">
+            <div class="header__logo col-sm-3">
+                <img src="./model/images/Logo.jpg" class="img-thumbnail" alt="Cinque Terre" />
+            </div>
+            <div class="header__search-box col-sm-6">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Search" list="dbSearch" />
+                <datalist id="dbSearch">
+                    <option value="Đà Lạt"></option>
+                    <option value="Đà Nẵng"></option>
+                    <option value="SaPa"></option>
+                    <option value="Kiên Giang"></option>
+                    <option value="Cà Mau"></option>
+                </datalist>
+            </div>
+            <nav class="header__action col-sm-3">
+                <ul class="header__action-list">
+                    <li class="header__action-item">
+                        <a class="header__action-item-link" href="#">
+                            <i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="header__action-item">
+                        <a class="header__action-item-link" href="#">
+                            <i class="fab fa-facebook-messenger"></i></a>
+                    </li>
+                    <li class="header__action-item user">
+                        <div class="header__action-item-link " href="#" data-toggle="dropdown">
+                            <img src="./model/images/user_avatar.jpg" alt="">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Trang cá nhân</a>
+                            <a class="dropdown-item" href="#">Đã lưu</a>
+                            <a class="dropdown-item" href="#">Cài đặt</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Đăng xuất</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <!-- ==============================Phần container============================== -->
+        <div class="container">
+
+            <div id="demo" class="carousel" data-ride="carousel">
+
+                <!-- Phần Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- Phần slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./model/images/DaLat1.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./model/images/DaLat2.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./model/images/DaLat3.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <!-- Grid - Row - Column -->
+            <!-- <div class="grid"> -->
+            <div class="row app_content">
+                <div class="sidebar col-sm-2 ">
+                    <ul class="sidebar__list">
+
+                        <li class="sidebar__item">
+                            <a scr="" href="#" class="sidebar__item-link">
+                                <i class="sidebar__icon fa-solid fa-house"></i>
+                                <span class="sidebar__item-name">Trang chủ</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__item-link">
+                                <i class="sidebar__icon fa-solid fa-motorcycle"></i>
+                                <span class="sidebar__item-name">Mạng xã hội</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__item-link">
+                                <i class="sidebar__icon fa-solid fa-hotel"></i>
+                                <span class="sidebar__item-name">Đặt Tour</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__item-link">
+                                <i class="sidebar__icon fa-solid fa-ranking-star"></i>
+                                <span class="sidebar__item-name">Bảng xếp hạng</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content col-sm-8">
+                    <div class="post__tab">
+
+                        <div class="post__tab--select active">
+                            <i class="post__tab-icon fas fa-camera-retro"></i>
+                            Bài viết
+                        </div>
+                        <div class="post__tab--select ">
+                            <i class="fa-solid fa-camcorder"></i>
+                            <i class="post__tab-icon fa-solid fa-video"></i>
+                            Video
+                        </div>
+
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="post-wrap">
+                        <h1 class="post__heading">Bài viết</h1>
+                        <div class="post__user">
+                            <img class="post__user-avatar" src="./model/images/avt.jfif"></img>
+
+                            <a class="post__user-name" href="#">
+                                Ngoc Han
+                            </a>
+
+                            <div class="post__user-time">Ngày 25/9/2022</div>
+                        </div>
+
+                        <div class="post__location">
+                            <i class="post__location-icon fa-solid fa-location-dot"></i>
+                            <span class="post__location-name"> Đà Lạt</span>
+                        </div>
+
+                        <div class="post__caption">
+                            Đà Lạt là thành phố trực thuộc tỉnh Lâm Đồng,
+                            nằm trên cao nguyên Lâm Viên, thuộc vùng Tây Nguyên, Việt Nam.
+                            Từ xa xưa, vùng đất này vốn là địa bàn cư trú của những cư dân người Lạch,
+                            người Chil và người Srê thuộc dân tộc Cơ Ho.
+
+                        </div>
+                        <div class="post__tag">
+                            <a href="#">#DaLat</a>
+                            <a href="#">#MayLangThang</a>
+
+                        </div>
+
+
+                        <div class="post__image-wrap ">
+                            <img class="post__image rounded" src="./model/images/DaLat1.jpg" alt="Cinque Terre">
+
+                            <div class="post__control prev">
+                                <i class='bx bx-chevron-right bx-rotate-180' style='color:#ccc'></i>
+                            </div>
+
+                            <div class="post__control next">
+                                <i class='bx bx-chevron-right' style='color:#ccc'></i>
+
+                            </div>
+
+                            <p class="post__tab--count-image"></p>
+
+
+                            <div class="gallery">
+                                <div class="gallery__inner">
+                                    <img class="gallery__img " src="./model/images/DaLat1.jfif" alt="">
+                                </div>
+
+                                <div class="gallery__control close">
+                                    <i class="fa-solid fa-xmark" style='color:#e0dcdc'></i>
+                                </div>
+
+                                <div class="gallery__control left">
+                                    <i class="fa-solid fa-chevron-left" style='color:#e0dcdc'></i>
+                                </div>
+
+                                <div class="gallery__control right">
+                                    <i class="fa-solid fa-chevron-right" style='color:#e0dcdc'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============= Bình luận  ==============-->
+                        <div class="comment">
+                            <div class="comment__action">
+                                <p class="comment__action--like">
+                                    <i class="comment__action-icon fa-regular fa-heart"></i>
+                                </p>
+                                <p class="comment__action--comment">
+                                    <i class="comment__action-icon fa-regular fa-comments"></i>
+                                </p>
+                                <p class="comment__action--save">
+                                    <i class="comment__action-icon fa-regular fa-bookmark"></i>
+                                </p>
+                            </div>
+
+                            <div class="comment--count">
+                                <h4>Ngoc Han và 200 người khác đã thích</h4>
+                            </div>
+
+                            <input class="comment--post" type="text" name="comment" id=""
+                                placeholder="Thêm bình luận...">
+                        </div>
+
+                    </div>
+
+                    <div class="post-wrap">
+                        <h1 class="post__heading">Bài viết</h1>
+                        <div class="post__user">
+                            <img class="post__user-avatar" src="./model/images/avt.jfif"></img>
+
+                            <a class="post__user-name" href="#">
+                                Ngoc Han
+                            </a>
+
+                            <div class="post__user-time">Ngày 25/9/2022</div>
+                        </div>
+
+                        <div class="post__location">
+                            <i class="post__location-icon fa-solid fa-location-dot"></i>
+                            <span class="post__location-name"> Đà Lạt</span>
+                        </div>
+
+                        <div class="post__caption">
+                            Đà Lạt là thành phố trực thuộc tỉnh Lâm Đồng,
+                            nằm trên cao nguyên Lâm Viên, thuộc vùng Tây Nguyên, Việt Nam.
+                            Từ xa xưa, vùng đất này vốn là địa bàn cư trú của những cư dân người Lạch,
+                            người Chil và người Srê thuộc dân tộc Cơ Ho.
+
+                        </div>
+                        <div class="post__tag">
+                            <a href="#">#DaLat</a>
+                            <a href="#">#MayLangThang</a>
+
+                        </div>
+
+
+                        <div class="post__image-wrap ">
+                            <img class="post__image rounded" src="./model/images/DaLat1.jpg" alt="Cinque Terre">
+
+                            <div class="post__control prev">
+                                <i class='bx bx-chevron-right bx-rotate-180' style='color:#ccc'></i>
+                            </div>
+
+                            <div class="post__control next">
+                                <i class='bx bx-chevron-right' style='color:#ccc'></i>
+
+                            </div>
+
+                            <p class="post__tab--count-image"></p>
+
+
+                            <div class="gallery">
+                                <div class="gallery__inner">
+                                    <img class="gallery__img " src="./model/images/DaLat1.jfif" alt="">
+                                </div>
+
+                                <div class="gallery__control close">
+                                    <i class="fa-solid fa-xmark" style='color:#e0dcdc'></i>
+                                </div>
+
+                                <div class="gallery__control left">
+                                    <i class="fa-solid fa-chevron-left" style='color:#e0dcdc'></i>
+                                </div>
+
+                                <div class="gallery__control right">
+                                    <i class="fa-solid fa-chevron-right" style='color:#e0dcdc'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============= Bình luận  ==============-->
+                        <div class="comment">
+                            <div class="comment__action">
+                                <p class="comment__action--like">
+                                    <i class="comment__action-icon fa-regular fa-heart"></i>
+                                </p>
+                                <p class="comment__action--comment">
+                                    <i class="comment__action-icon fa-regular fa-comments"></i>
+                                </p>
+                                <p class="comment__action--save">
+                                    <i class="comment__action-icon fa-regular fa-bookmark"></i>
+                                </p>
+                            </div>
+
+                            <div class="comment--count">
+                                <h4>Ngoc Han và 200 người khác đã thích</h4>
+                            </div>
+
+                            <input class="comment--post" type="text" name="comment" id=""
+                                placeholder="Thêm bình luận...">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- ======= VÙNG MIỀN========= -->
+                <div class="location col-sm-2">
+
+                    <ul class="location__list">
+                        <li>
+                            <div data-toggle="collapse" data-target="#Bac" class="location__item">
+                                Miền Bắc
+                                <i class="location_icon fa-solid fa-angle-down"></i>
+                            </div>
+                            <div id="Bac" class="collapse">
+
+                                <ul class="location__item-menu">
+                                    <li><a href="#">Hà Nội</a></li>
+                                    <li><a href="#">Hạ Long</a></li>
+                                    <li><a href="#">Hà Giang</a></li>
+                                    <li><a href="#">Sapa</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div data-toggle="collapse" data-target="#Trung" class="location__item">
+                                Miền Trung
+                                <i class="location_icon fa-solid fa-angle-down"></i>
+                            </div>
+                            <div id="Trung" class="collapse">
+
+                                <ul class="location__item-menu">
+                                    <li><a href="#">Đà Nẵng</a></li>
+                                    <li><a href="#">Huế</a></li>
+                                    <li><a href="#">Quy Nhơn</a></li>
+                                    <li><a href="#">Nha Trang</a></li>
+                                    <li><a href="#">Buôn Ma Thuột</a></li>
+                                    <li><a href="#">Đà Lạt</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div data-toggle="collapse" data-target="#Nam" class="location__item">
+                                Miền Nam
+                                <i class="location_icon fa-solid fa-angle-down"></i>
+                            </div>
+                            <div id="Nam" class="collapse">
+
+                                <ul class="location__item-menu">
+                                    <li><a href="#">Tp Hồ Chí Minh</a></li>
+                                    <li><a href="#">Cần Thơ</a></li>
+                                    <li><a href="#">Kiên Giang</a></li>
+                                    <li><a href="#">Cà Mau</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==============================Footer=============================== -->
+
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="footer__logo" src="./model/images/Logo.jpg" alt="">
+
+                    </div>
+
+                    <div class="col-sm-2">
+                        <h3 class="footer_heading">NỘI DUNG</h3>
+
+                        <ul class="footer-list">
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">Trang chủ</a>
+                            </li>
+
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">Mạng xã hội</a>
+                            </li>
+
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">Đặt Tour</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <h3 class="footer_heading">PHÁP LÝ</h3>
+
+                        <ul class="footer-list">
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">Điều khoản sử dụng</a>
+                            </li>
+
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">Quyền riêng tư</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <h3 class="footer_heading">KẾT NỐI</h3>
+
+                        <ul class="footer-list">
+                            <li class="footer--select">
+                                <a href="" class=" footer--select_link">
+                                    <i class="footer-icon fa-brands fa-facebook"></i>
+                                    Facebook
+
+                                </a>
+                            </li>
+
+                            <li class="footer--select">
+                                <a href="" class="footer--select_link">
+                                    <i class="footer-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h3 class="footer_heading">TẢI ỨNG DỤNG</h3>
+
+                        <div class="footer_download">
+                            <div>
+                                <img class="footer_qr-img" src="./model/images/QRCode.png" alt="">
+                            </div>
+
+                            <div class="footer_download-apps">
+                                <a href="" class="">
+                                    <img src="./model/images/Andoird.png" alt="" class="footer-android">
+                                </a>
+
+                                <a href="" class="">
+                                    <img src="./model/images/IOS.png" alt="" class="footer-ios">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_text">
+                @ 2022 - VieTripSocial
+            </div>
+        </footer>
+    </div>
+
+    <script src="./controller/script.js"></script>
+
+</body>
+
+
+</html>
+
+<!-- Tạo Validator -> tạo các rules -> get E của form -> duyệt qua từng E và validate
+submit form -> xử lý blur -> xử lý input  -->

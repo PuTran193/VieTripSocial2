@@ -1,6 +1,6 @@
 :root{
-    --primary-color: rgb(50,129,107)
-    --while-color: #fff;
+    --primary-color: rgb(50,129,107);
+    --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
 
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -21,12 +21,12 @@
 body{
     min-height: 100vh;
     margin: 0;
+        /* font-family: 'Poppins', sans-serif; */
 }
 html{
     font-size: 62.5%;
     line-height: 16px;
     /* 1rem= 10px  */
-    font-family: 'Roboto', sans-serif;
     /* sans-serif tổng hợp font k chân */
     box-sizing: border-box;
 }

@@ -1,4 +1,6 @@
 var image = document.querySelector(".post__tab-image");
+var image2 = document.querySelector(".post__tab-image");
+
 var prev = document.querySelector(".prev");
 var next = document.querySelector(".next");
 var close = document.querySelector(".close");
@@ -6,9 +8,9 @@ var gallery = document.querySelector(".gallery");
 var galleryImg = document.querySelector(".gallery__inner img");
 
 var hideImage = [
-  "./assets/images/DaLat1.jpg",
-  "./assets/images/DaLat2.jpg",
-  "./assets/images/DaLat3.jpg",
+  "./model/images/DaLat1.jpg",
+  "./model/images/DaLat2.jpg",
+  "./model/images/DaLat3.jpg",
 ];
 var number = document.querySelector(".post__tab--count-image");
 
@@ -20,13 +22,11 @@ close.addEventListener("click", function () {
   gallery.classList.remove("show");
 });
 
-// image.forEach((item, index) => {
-//     item.addEventListener('click', function(){
-//         currentIndex = index;
-//         gallery.src = hideImage[currentIndex].src;
-//         gallery.classList.add('show');
-//     })
-// })
+    image2.addEventListener('click', function(){
+        // currentIndex = index;
+        gallery.src = hideImage[currentIndex].src;
+        gallery.classList.add('show');
+    })
 
 prev.addEventListener("click", function () {
   currentIndex--;
