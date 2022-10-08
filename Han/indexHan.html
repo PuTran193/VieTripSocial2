@@ -160,6 +160,28 @@
                         <div class="line"></div>
                     </div>
 
+                    <nav class="filter ">
+                        <ul class="filter-nav ">
+                            <li class="filter-item nav-item">
+                                <a class="nav-link" >Mới nhất</a>
+                            </li>
+                            <li class="filter-item nav-item">
+                                <a class="nav-link" >Phổ biến</a>
+                            </li>
+                            <li class="filter-item nav-item">
+                                <a class="nav-link" >Lượt theo dõi cao</a>
+                            </li>
+                            <li class="filter-item nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Section 4
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" >Link 1</a>
+                                    <a class="dropdown-item" >Link 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                     <div class="post-wrap">
                         <h1 class="post__heading">Bài viết</h1>
                         <div class="post__user">
@@ -178,10 +200,15 @@
                         </div>
 
                         <div class="post__caption">
-                            Đà Lạt là thành phố trực thuộc tỉnh Lâm Đồng,
-                            nằm trên cao nguyên Lâm Viên, thuộc vùng Tây Nguyên, Việt Nam.
-                            Từ xa xưa, vùng đất này vốn là địa bàn cư trú của những cư dân người Lạch,
-                            người Chil và người Srê thuộc dân tộc Cơ Ho.
+                            <span>Hà Giang là tỉnh địa đầu của Tổ quốc, phía Đông giáp tỉnh Cao Bằng, phía Tây giáp tỉnh Yên Bái và Lào Cai, phía Nam giáp
+                            tỉnh Tuyên Quang, phía Bắc giáp Trung Quốc. Các cung đường Hà Giang quanh co, cheo leo vốn đầy thách thức cho người lái
+                            xe. Thế nhưng khi bạn phóng tầm mắt xung quanh, căng thẳng nhường lại chỗ cho cảm giác thư thái khi chiêm ngưỡng vẻ đẹp
+                            cao nguyên.</span>
+                            <span class="phuot-language" title="Thuật ngữ" data-toggle="popover" 
+                            data-placement="top" data-content="Là cung đường chạy xe gồ ghề đá sỏi đòi hỏi nhiều kỹ năng và bản lĩnh của người cầm lái.">Offroad</span>
+                            <span class="phuot-language" title="Thuật ngữ" data-toggle="popover" data-placement="top"
+                                data-content="Đi bộ để khám phá các vùng miền, làng bản nơi sâu thẳm trong rừng hay lên núi.">Trekking</span>
+                            
 
                         </div>
                         <div class="post__tag">
@@ -238,12 +265,27 @@
                                 </p>
                             </div>
 
-                            <div class="comment--count">
+                            <div class="comment__like--count">
                                 <h4>Ngoc Han và 200 người khác đã thích</h4>
                             </div>
 
-                            <input class="comment--post" type="text" name="comment" id=""
+                            <input class="comment--add" type="text" name="comment" id=""
                                 placeholder="Thêm bình luận...">
+
+                            <div class="comment__wrap media p-3">
+                                <img src="./model/images/avt.jpg" alt="John Doe" class="mr-3 mt-2 rounded-circle" style="width:20px;">
+                                <div class="media-body">
+                                    <h4>Ngọc Hân <small><i>bình luận lúc 03/10 22:30</i></small></h4>
+                                    <p>Xinh đẹp tuyệt vời :* </p>
+                                    <div class="media p-3">
+                                        <img src="./model/images/user_avatar.jpg" alt="Jane Doe" class="mr-3 mt-2 rounded-circle" style="width:20px;">
+                                        <div class="media-body">
+                                            <h4>Định khùng <small><i>bình luận lúc 03/10 23:40</i></small></h4>
+                                            <p>Ờ cám ơn</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -492,6 +534,11 @@
         </footer>
     </div>
 
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
     <script src="./controller/script.js"></script>
 
 </body>

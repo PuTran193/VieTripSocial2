@@ -1,0 +1,45 @@
+:root {
+    --text-font: 1.4rem
+}
+.homepage{
+}
+
+.section{
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    color: #4c9171;
+}
+
+.nav-item{
+    padding: 8px;
+    border-right: 0.5px solid #ccc;
+}
+
+.nav-link{
+    color: #4c9171;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.section__tab {
+    padding: 20px 0 40px 20px;
+    color: #fff;
+    font-size: var(--text-font);
+}
+.section__tab:nth-child(2){
+    background-color: rgb(72, 107, 138);
+}
+.section__tab:nth-child(3) {
+    background-color: rgb(72, 138, 115);
+}
+
+.section__tab:nth-child(4) {
+    background-color: rgb(80, 72, 138);
+}
+
+.section__tab:last-child {
+    background-color: rgb(138, 114, 72);
+}
+
+
